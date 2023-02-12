@@ -7,9 +7,11 @@ import Sitemap from "../parts/Sitemap";
 import ShoppingCart from "../parts/Cart/ShoppingCart";
 import ShippingDetails from "../parts/Cart/ShippingDetails";
 
-const Details = () => {
+import Document from "../parts/Document";
+
+const Cart = () => {
   return (
-    <>
+    <Document>
       <Header theme="black" />
       <Breadcrumb
         list={[
@@ -29,8 +31,8 @@ const Details = () => {
 
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   );
 };
 
-export default Details;
+export default Cart;

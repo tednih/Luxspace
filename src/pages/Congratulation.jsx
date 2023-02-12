@@ -6,18 +6,19 @@ import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import Sitemap from "../parts/Sitemap";
 
+import Document from "../parts/Document";
+
 const Congratulation = () => {
   return (
-    <>
-      <>
-        <Header theme="black" />
-        <Breadcrumb
-          list={[
-            { url: "/", name: "Home" },
-            { url: "/congratulation", name: "Success Checkout" },
-          ]}
-        />
-      </>
+    <Document>
+      <Header theme="black" />
+      <Breadcrumb
+        list={[
+          { url: "/", name: "Home" },
+          { url: "/congratulation", name: "Success Checkout" },
+        ]}
+      />
+
       <section className="">
         <div className="container mx-auto min-h-screen">
           <div className="flex flex-col items-center justify-center">
@@ -45,7 +46,7 @@ const Congratulation = () => {
       </section>
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="flex items-center hero">
       <div className="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
@@ -52,3 +52,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
